@@ -360,6 +360,11 @@ textarea {
   padding: 0.2em 0;
 }
 
+body {
+  font-family: "Merriweather", serif;
+  font-family: "Inter", sans-serif;
+}
+
 .container {
   width: 1440px;
   margin: 0 auto;
