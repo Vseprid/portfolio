@@ -377,10 +377,17 @@ html {
   scroll-behavior: smooth;
 }
 
-.container {
-  width: 1440px;
-  margin: 0 auto;
-  padding: 0 20px;
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .nav-list {
@@ -406,5 +413,9 @@ html {
 
 .nav-link:hover {
   color: #bdae82;
+}
+
+.icon {
+  width: 50px;
 }
 /*# sourceMappingURL=main.css.map */

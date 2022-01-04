@@ -1,5 +1,15 @@
 $white: #ffffff;
 $gold: #bdae82;
+$transition: .3s;
+%svg {
+    fill: $white;
+    transition: $transition;
+    cursor: pointer;
+
+    &:hover {
+        fill: $gold;
+    }
+}
 
 @mixin flex ($justify-content: flex-start, $align-items: flex-start) {
     display: flex;

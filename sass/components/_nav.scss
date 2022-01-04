@@ -1,6 +1,9 @@
+.nav {
+    margin-left: auto;
+}
+
 .nav-list {
     @include flex(flex-end, center);
-    list-style: none;
 }
 
 .nav-link {

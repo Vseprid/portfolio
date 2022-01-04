@@ -1,0 +1,11 @@
+.container__header {
+    @include flex($align-items: center);
+    margin-top: 25px;
+  }
+
+.switch-language {
+    margin-left: 30px;
+    &__gold {
+        color: $gold;
+    }
+}
