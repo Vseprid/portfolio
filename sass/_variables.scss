@@ -1,0 +1,8 @@
+$white: #ffffff;
+$gold: #bdae82;
+
+@mixin flex ($justify-content: flex-start, $align-items: flex-start) {
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
