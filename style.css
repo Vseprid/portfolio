@@ -1,6 +1,6 @@
 .icon {
   fill: #ffffff;
-  transition: 0.3s;
+  transition: 0.4s;
   cursor: pointer;
 }
 .icon:hover {
@@ -375,22 +375,47 @@ textarea {
 }
 
 body {
-  font-family: "Merriweather", serif;
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 20px;
   color: #ffffff;
-  background: black;
 }
 
 html {
   scroll-behavior: smooth;
+  background: black;
 }
 
 .container {
   width: 1440px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.section__hero {
+  padding-top: 250px;
+  background-image: url("./assets/img/hero-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.section__hero > * {
+  margin-left: 80px;
+  max-width: 500px;
+  line-height: 40px;
+}
+
+.page-title {
+  font-family: "Merriweather", serif;
+  font-size: 60px;
+  margin-bottom: 50px;
+}
+
+.hero__inf {
+  margin-bottom: 30px;
+}
+
+.button__hero {
+  margin-bottom: 330px;
 }
 
 .nav {
@@ -419,6 +444,7 @@ html {
 }
 
 .container__header {
+  position: absolute;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -430,6 +456,16 @@ html {
 }
 .switch-language__gold {
   color: #bdae82;
+}
+
+.button {
+  width: 220px;
+  height: 55px;
+  background-color: #bdae82;
+  transition: 0.4s;
+}
+.button:hover {
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=style.css.map */

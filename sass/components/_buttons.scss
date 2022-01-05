@@ -1,0 +1,10 @@
+.button {
+    width: 220px;
+    height: 55px;
+    background-color: $gold;
+    transition: $transition;
+
+    &:hover {
+        color: $white;
+    }
+}
