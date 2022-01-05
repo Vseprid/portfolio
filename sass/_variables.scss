@@ -17,3 +17,17 @@ $title-font: 'Merriweather', serif;
     justify-content: $justify-content;
     align-items: $align-items;
 }
+
+%items {
+    @include flex(space-between);
+    flex-wrap: wrap;
+}
+
+%item {
+    @include flex($align-items: center);
+    flex-direction: column;
+
+    & > * {
+        text-align: center;
+    }
+}

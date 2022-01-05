@@ -1,0 +1,27 @@
+.wrapper-title {
+  position: relative;
+  @include flex(center);
+  margin: 0 auto 60px;
+  padding-top: 100px;
+  width: 50%;
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 10%;
+    width: 100%;
+    height: 2px;
+    background-color: $gold;
+    z-index: 1;
+  }
+}
+
+.section-title {
+  position: relative;
+  padding: 0 20px;
+  font-family: $title-font;
+  font-size: 40px;
+  color: $gold;
+  background: black;
+  z-index: 10;
+}
