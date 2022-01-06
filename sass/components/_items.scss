@@ -1,14 +1,20 @@
-.skills-items {
+.items {
     @extend %items;
+}
+
+.skills-items {
     gap: 90px;
+}
+
+.item {
+    @extend %item;
+
 }
 
 .skill-item {
     max-width: 280px;
     min-height: 240px;
-    @extend %item;
     justify-content: flex-end;
-    gap: 20px;
     background-position: center top;
     background-repeat: no-repeat;
     background-size: 62px 50px;
@@ -27,6 +33,7 @@
     }
 }
 
+
 .skill__title {
     font-weight: 700;
 }
@@ -38,4 +45,26 @@
 .portfolio-img {
     @extend %items;
     gap: 25px;
+}
+
+.price__item {
+    max-width: 450px;
+    padding: 43px 115px;
+    border: $border;
+}
+
+.price__title {
+    font-family: $title-font;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.price__button {
+    margin-top: 20px;
+}
+
+.price__dollars {
+    font-weight: 700;
+    color: $gold;
+    font-size: 24px;
 }

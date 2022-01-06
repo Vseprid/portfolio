@@ -13,9 +13,7 @@ html {
 // Hero start
 .section__hero {
   padding-top: 250px;
-  background-image: url('./assets/img/hero-bg.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
+  @include background ('./assets/img/hero-bg.jpg');
 
   & > * {
     margin-left: 80px;
@@ -59,3 +57,52 @@ html {
   }
 }
 
+// Video end
+
+// Price start
+
+.price {
+  margin-bottom: 100px;
+}
+
+// Price end
+
+// Contact start
+.section-contact {
+  @include background ('./assets/img/contacts-bg.jpg');
+}
+
+.contact {
+  max-width: 450px;
+  margin-left: auto;
+  padding-top: 60px;
+  padding-bottom: 195px;
+
+  &__title {
+    margin-bottom: 30px;
+    padding: 0;
+    background-color: transparent;
+  }
+
+  &__input {
+    width: 100%;
+    min-height: 50px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    font-family: inherit;
+    color: $gold;
+    border: $border;
+    background: transparent;
+
+    &::placeholder {
+      color: $gold;
+    }
+  }
+
+  &__area {
+    height: 100px;
+    resize: none;
+  }
+}
+
+// Contact end

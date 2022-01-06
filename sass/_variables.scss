@@ -2,6 +2,7 @@ $white: #ffffff;
 $gold: #bdae82;
 $transition: .4s;
 $title-font: 'Merriweather', serif;
+$border: 2px solid $gold;
 %svg {
     fill: $white;
     transition: $transition;
@@ -10,6 +11,12 @@ $title-font: 'Merriweather', serif;
     &:hover {
         fill: $gold;
     }
+}
+
+@mixin background ($path) {
+  background-image: url($path);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 @mixin flex ($justify-content: flex-start, $align-items: flex-start) {
@@ -21,11 +28,13 @@ $title-font: 'Merriweather', serif;
 %items {
     @include flex(space-between);
     flex-wrap: wrap;
+    font-size: 18px;
 }
 
 %item {
     @include flex($align-items: center);
     flex-direction: column;
+    gap: 20px;
 
     & > * {
         text-align: center;

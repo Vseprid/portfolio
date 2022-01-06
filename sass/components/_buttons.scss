@@ -2,6 +2,7 @@
     width: 220px;
     height: 55px;
     border: none;
+    font-family: inherit;
     transition: $transition;
 
     &_active {
@@ -16,5 +17,6 @@
 
     &:hover {
         color: $white;
+        font-size: 20px;
     }
 }
