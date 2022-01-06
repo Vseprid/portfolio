@@ -106,3 +106,15 @@ html {
 }
 
 // Contact end
+
+// Footer start
+
+.footer {
+  margin: 50px auto;
+  @include flex(space-between);
+
+  & > * {
+    @include flex();
+    gap: 20px;
+  }
+}

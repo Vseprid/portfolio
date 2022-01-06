@@ -438,6 +438,17 @@ body {
   fill: #bdae82;
 }
 
+.socnet {
+  width: 32px;
+  height: 32px;
+  fill: #ffffff;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.socnet:hover {
+  fill: #bdae82;
+}
+
 .container__header {
   position: absolute;
   display: flex;
@@ -653,6 +664,19 @@ html {
 .contact__area {
   height: 100px;
   resize: none;
+}
+
+.footer {
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.footer > * {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

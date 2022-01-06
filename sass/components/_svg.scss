@@ -4,3 +4,7 @@
 .play {
     @include svg(130px);
 }
+
+.socnet {
+    @include svg(32px, 32px);
+}
