@@ -3,7 +3,9 @@ $gold: #bdae82;
 $transition: .4s;
 $title-font: 'Merriweather', serif;
 $border: 2px solid $gold;
-%svg {
+@mixin svg ($width: auto, $height: auto) {
+    width: $width;
+    height: $height;
     fill: $white;
     transition: $transition;
     cursor: pointer;
