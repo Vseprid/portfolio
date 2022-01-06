@@ -46,3 +46,16 @@ html {
   @include flex(space-between);
 }
 
+// Portfolio end
+
+// Video start
+
+.video-player {
+  position: relative;
+  @include flex(center, center);
+
+  &__hover {
+    position: absolute;
+  }
+}
+

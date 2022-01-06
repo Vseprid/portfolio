@@ -447,6 +447,16 @@ html {
   align-items: flex-start;
 }
 
+.video-player {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.video-player__hover {
+  position: absolute;
+}
+
 .nav {
   margin-left: auto;
 }
