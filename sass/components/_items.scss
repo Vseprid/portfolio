@@ -34,3 +34,8 @@
 .skill__inf {
     font-size: 18px;
 }
+
+.portfolio-img {
+    @extend %items;
+    gap: 25px;
+}

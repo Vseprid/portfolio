@@ -7,7 +7,7 @@
   fill: #bdae82;
 }
 
-.skills-items {
+.portfolio-img, .skills-items {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -22,6 +22,10 @@
 }
 .skill-item > * {
   text-align: center;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -435,6 +439,14 @@ html {
   margin-bottom: 330px;
 }
 
+.portfolio-buttons {
+  margin: 0 auto 60px;
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
 .nav {
   margin-left: auto;
 }
@@ -478,8 +490,16 @@ html {
 .button {
   width: 220px;
   height: 55px;
-  background-color: #bdae82;
+  border: none;
   transition: 0.4s;
+}
+.button_active {
+  background-color: #bdae82;
+}
+.button_inactive {
+  background-color: transparent;
+  border: 2px solid #bdae82;
+  color: #bdae82;
 }
 .button:hover {
   color: #ffffff;
@@ -547,6 +567,10 @@ html {
 
 .skill__inf {
   font-size: 18px;
+}
+
+.portfolio-img {
+  gap: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,8 +1,18 @@
 .button {
     width: 220px;
     height: 55px;
-    background-color: $gold;
+    border: none;
     transition: $transition;
+
+    &_active {
+        background-color: $gold;
+    }
+
+    &_inactive {
+        background-color: transparent;
+        border: 2px solid $gold;
+        color: $gold;
+    }
 
     &:hover {
         color: $white;

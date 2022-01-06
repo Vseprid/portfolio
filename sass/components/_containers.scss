@@ -38,3 +38,11 @@ html {
 }
 // Hero end
 
+// Portfolio start
+
+.portfolio-buttons {
+  margin: 0 auto 60px;
+  width: 65%;
+  @include flex(space-between);
+}
+
