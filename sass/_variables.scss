@@ -42,3 +42,8 @@ $border: 2px solid $gold;
         text-align: center;
     }
 }
+
+%offset {
+    margin-left: 15px;
+    margin-right: -15px;
+}

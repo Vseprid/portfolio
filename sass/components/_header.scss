@@ -1,12 +1,12 @@
 .container__header {
     position: absolute;
-    @include flex($align-items: center);
+    @include flex();
     margin-top: 25px;
     // background-color: transparent;
   }
 
 .switch-language {
-    margin-left: 30px;
+    margin-left: 15px;
     &__gold {
         color: $gold;
     }

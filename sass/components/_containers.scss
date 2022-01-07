@@ -10,14 +10,18 @@ html {
 
 }
 
+.section {
+  @extend %offset;
+}
 // Hero start
 .section__hero {
-  padding-top: 250px;
+  margin-left: 0px;
+  padding-top: 290px;
   @include background ('./assets/img/hero-bg.jpg');
 
   & > * {
     margin-left: 80px;
-    max-width: 500px;
+    max-width: 490px;
   }
 }
 
@@ -69,17 +73,18 @@ html {
 
 // Contact start
 .section-contact {
+  margin-left: 0px;
   @include background ('./assets/img/contacts-bg.jpg');
 }
 
 .contact {
   max-width: 450px;
   margin-left: auto;
-  padding-top: 60px;
+  padding-top: 80px;
   padding-bottom: 195px;
 
   &__title {
-    margin-bottom: 30px;
+    margin-bottom: 60px;
     padding: 0;
     background-color: transparent;
   }
@@ -100,6 +105,7 @@ html {
   }
 
   &__area {
+    margin-bottom: 30px;
     height: 100px;
     resize: none;
   }
@@ -110,8 +116,10 @@ html {
 // Footer start
 
 .footer {
-  margin: 50px auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
   @include flex(space-between);
+
 
   & > * {
     @include flex();

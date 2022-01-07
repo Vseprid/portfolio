@@ -1,8 +1,8 @@
 .wrapper-title {
   position: relative;
   @include flex(center);
-  margin: 0 auto 60px;
-  padding-top: 100px;
+  margin: 0 auto 80px;
+  padding-top: 125px;
   width: 50%;
   &::before {
     content: '';

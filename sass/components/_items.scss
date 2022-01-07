@@ -3,7 +3,8 @@
 }
 
 .skills-items {
-    gap: 90px;
+    margin-left: 35px;
+    gap: 70px;
 }
 
 .item {
@@ -44,10 +45,11 @@
 
 .portfolio-img {
     @extend %items;
-    gap: 25px;
+    gap: 20px;
 }
 
 .price__item {
+    gap: 30px;
     max-width: 450px;
     padding: 43px 115px;
     border: $border;
