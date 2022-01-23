@@ -14,7 +14,7 @@
 <body>
     <!-- Header start -->
     <header class="container">
-        <div class="container container__header">
+        <div class="section container__header">
             <div class="logo">
                 <svg class="icon">
                     <use href="assets/svg/sprite.svg#logo"></use>
@@ -42,17 +42,24 @@
             <div class="switch-language">
                 <pre> <span class="switch-language__gold">en</span>  /  ru</pre>
             </div>
+            <div class="hamburger">
+                <div class="hamburger__line"></div>
+                <div class="hamburger__line"></div>
+                <div class="hamburger__line"></div>
+            </div>
         </div>
     </header>
     <!-- Header end -->
     <main>
         <div class="container">
             <!-- Hero start -->
-            <section class="section section__hero">
-                <h1 class="page-title">Alexa Rise</h1>
-                <p class="hero__inf">Save sincere emotions, romantic feelings and happy moments of life together with professional photographer Alexa Rise</p>
-                <button class="button button_active button__hero">Hire me</button>
-            </section>
+            <div class="wrapper wrapper_hero">
+                <section class="section section__hero">
+                    <h1 class="page-title">Alexa Rise</h1>
+                    <p class="hero__inf">Save sincere emotions, romantic feelings and happy moments of life together with professional photographer Alexa Rise</p>
+                    <button class="button button_active button__hero">Hire me</button>
+                </section>
+            </div>
             <!-- Hero end -->
             <!-- Skills start -->
             <section class="section" id="skills">
@@ -106,7 +113,7 @@
                     <h2 class="section-title">Video</h2>
                 </div>
                 <div class="video-player">
-                    <img src="assets/img/video.jpg" alt="video">
+                    <img class="video-player__img" src="assets/img/video.jpg" alt="video">
                     <svg class="video-player__hover play">
                         <use href="assets/svg/sprite.svg#play"></use>
                     </svg>

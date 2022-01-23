@@ -46,6 +46,10 @@
 .portfolio-img {
     @extend %items;
     gap: 20px;
+
+    & > * {
+        max-width: 450px;
+    }
 }
 
 .price__item {

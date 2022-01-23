@@ -1,13 +1,35 @@
 .container__header {
     position: absolute;
+    left: 0;
+    right: 0;
     @include flex();
     margin-top: 25px;
-    // background-color: transparent;
   }
 
 .switch-language {
     margin-left: 15px;
     &__gold {
         color: $gold;
+    }
+
+    @media screen and (max-width: 768px) {
+        margin-left: auto;
+    }
+}
+
+.hamburger {
+    display: none;
+    margin: 5px 4px 0 20px;
+    flex-direction: column;
+    height: 28px;
+
+    &__line {
+        width: 50px;
+        height: 3px;
+        background-color: $white;
+    }
+
+    @media screen and (max-width: 768px) {
+        @include flex(space-between);
     }
 }
