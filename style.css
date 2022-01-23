@@ -601,7 +601,13 @@ html {
 }
 .section__hero > * {
   margin-left: 80px;
-  max-width: 490px;
+  max-width: 35%;
+}
+@media screen and (max-width: 1000px) {
+  .section__hero > * {
+    margin-left: 0;
+    max-width: 60%;
+  }
 }
 
 .page-title {
@@ -609,13 +615,30 @@ html {
   font-size: 60px;
   margin-bottom: 50px;
 }
+@media screen and (max-width: 768px) {
+  .page-title {
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+}
 
 .hero__inf {
   margin-bottom: 30px;
 }
+@media screen and (max-width: 768px) {
+  .hero__inf {
+    margin-bottom: 60px;
+  }
+}
 
 .button__hero {
   margin-bottom: 330px;
+}
+@media screen and (max-width: 768px) {
+  .button__hero {
+    margin-bottom: 150px;
+  }
 }
 
 .portfolio-buttons {

@@ -30,7 +30,12 @@ html {
 
   & > * {
     margin-left: 80px;
-    max-width: 490px;
+    max-width: 35%;
+
+    @media screen and (max-width: 1000px) {
+      margin-left: 0;
+      max-width: 60%;
+    }
   }
 }
 
@@ -38,14 +43,28 @@ html {
   font-family: $title-font;
   font-size: 60px;
   margin-bottom: 50px;
+
+  @media screen and (max-width: 768px) {
+    font: {
+      size: 32px;
+      weight: 400;
+    }
+    margin-bottom: 20px;
+}
 }
 
 .hero__inf {
   margin-bottom: 30px;
+  @media screen and (max-width: 768px) {
+    margin-bottom: 60px;
+  }
 }
 
 .button__hero {
   margin-bottom: 330px;
+  @media screen and (max-width: 768px) {
+    margin-bottom: 150px;
+  }
 }
 // Hero end
 
