@@ -563,6 +563,11 @@ body {
 .portfolio-img > * {
   max-width: 450px;
 }
+@media screen and (max-width: 1000px) {
+  .portfolio-img {
+    justify-content: center;
+  }
+}
 
 .price__item {
   gap: 30px;
@@ -662,10 +667,11 @@ html {
 
 .portfolio-buttons {
   margin: 0 auto 60px;
-  width: 65%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 5px;
 }
 
 .video-player {

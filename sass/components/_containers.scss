@@ -72,8 +72,10 @@ html {
 
 .portfolio-buttons {
   margin: 0 auto 60px;
-  width: 65%;
-  @include flex(space-between);
+  // width: min-content;
+  @include flex(center);
+  flex-wrap: wrap;
+  gap: 5px;
 }
 
 // Portfolio end
