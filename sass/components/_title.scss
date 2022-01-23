@@ -14,6 +14,11 @@
     background-color: $gold;
     z-index: 1;
   }
+  @media screen and (max-width: 768px) {
+    width: 56%;
+    margin: 0 auto 60px;
+    padding-top: 100px;
+}
 }
 
 .section-title {
@@ -24,4 +29,11 @@
   color: $gold;
   background: black;
   z-index: 10;
+
+  @media screen and (max-width: 768px) {
+    font: {
+      size: 32px;
+      weight: 400;
+    }
+}
 }

@@ -5,6 +5,9 @@
 .skills-items {
     margin-left: 35px;
     gap: 70px;
+    @media screen and (max-width: 785px) {
+        margin-left: 0;
+    }
 }
 
 .item {
@@ -36,6 +39,7 @@
 
 
 .skill__title {
+    font-size: 20px;
     font-weight: 700;
 }
 
