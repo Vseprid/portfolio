@@ -711,11 +711,19 @@ html {
   margin-bottom: 100px;
 }
 
-.section-contact {
-  margin-left: 0px;
+.wrapper_contact {
   background-image: url("./assets/img/contacts-bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.section-contact {
+  margin-left: 0px;
+}
+@media screen and (max-width: 768px) {
+  .section-contact {
+    margin-right: 0;
+  }
 }
 
 .contact {
@@ -723,6 +731,16 @@ html {
   margin-left: auto;
   padding-top: 80px;
   padding-bottom: 195px;
+}
+@media screen and (max-width: 768px) {
+  .contact {
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 .contact__title {
   margin-bottom: 60px;

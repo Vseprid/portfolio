@@ -115,9 +115,15 @@ html {
 // Price end
 
 // Contact start
+.wrapper_contact {
+  @include background ('./assets/img/contacts-bg.jpg');
+}
+
 .section-contact {
   margin-left: 0px;
-  @include background ('./assets/img/contacts-bg.jpg');
+  @media screen and (max-width: 768px) {
+    margin-right: 0;
+  }
 }
 
 .contact {
@@ -125,6 +131,15 @@ html {
   margin-left: auto;
   padding-top: 80px;
   padding-bottom: 195px;
+
+  @media screen and (max-width: 768px) {
+    margin: {
+      right: auto;
+      left: auto;
+    };
+    @include flex($align-items: center);
+    flex-direction: column;
+  }
 
   &__title {
     margin-bottom: 60px;
