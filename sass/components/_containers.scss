@@ -81,6 +81,14 @@ html {
 // Portfolio end
 
 // Video start
+.video-section {
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
 
 .video-player {
   position: relative;
@@ -92,6 +100,7 @@ html {
 
   &__hover {
     position: absolute;
+    width: 8.5%;
   }
 }
 

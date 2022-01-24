@@ -2,6 +2,17 @@
     @extend %items;
 }
 
+.price__items {
+    margin: {
+        left: auto;
+        right: auto;
+    }
+    row-gap: 50px;
+    @media screen and (max-width: 1390px) {
+        max-width: 450px;
+    }
+}
+
 .skills-items {
     margin-left: 35px;
     gap: 70px;

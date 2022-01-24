@@ -497,7 +497,7 @@ body {
   .wrapper-title {
     width: 56%;
     margin: 0 auto 60px;
-    padding-top: 100px;
+    padding-top: 80px;
   }
 }
 
@@ -514,6 +514,17 @@ body {
   .section-title {
     font-size: 32px;
     font-weight: 400;
+  }
+}
+
+.price__items {
+  margin-left: auto;
+  margin-right: auto;
+  row-gap: 50px;
+}
+@media screen and (max-width: 1390px) {
+  .price__items {
+    max-width: 450px;
   }
 }
 
@@ -674,6 +685,14 @@ html {
   gap: 5px;
 }
 
+@media screen and (max-width: 768px) {
+  .video-section {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
 .video-player {
   position: relative;
   display: flex;
@@ -685,6 +704,7 @@ html {
 }
 .video-player__hover {
   position: absolute;
+  width: 8.5%;
 }
 
 .price {
