@@ -658,9 +658,20 @@ html {
   background-position: center;
   background-repeat: no-repeat;
 }
+@media screen and (max-width: 1000px) {
+  .wrapper_hero {
+    background-position: -5px -30px;
+    background-size: auto 620px;
+  }
+}
 
 .section__hero {
   padding-top: 290px;
+}
+@media screen and (max-width: 1000px) {
+  .section__hero {
+    padding-top: 168px;
+  }
 }
 .section__hero > * {
   margin-left: 80px;
@@ -743,6 +754,12 @@ html {
   background-image: url("./assets/img/contacts-bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
+}
+@media screen and (max-width: 1000px) {
+  .wrapper_contact {
+    background-position: -250px 5px;
+    background-size: auto 620px;
+  }
 }
 
 .section-contact {

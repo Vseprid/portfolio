@@ -21,11 +21,20 @@ html {
 // Hero start
 .wrapper_hero {
   @include background ('./assets/img/hero-bg.jpg');
+
+  @media screen and (max-width: 1000px) {
+    background-position: -5px -30px;
+    background-size: auto 620px;
+  }
 }
 
 .section__hero {
   // margin-left: 0px;
   padding-top: 290px;
+
+  @media screen and (max-width: 1000px) {
+    padding-top: 168px;
+  }
 
   & > * {
     margin-left: 80px;
@@ -116,6 +125,11 @@ html {
 // Contact start
 .wrapper_contact {
   @include background ('./assets/img/contacts-bg.jpg');
+
+  @media screen and (max-width: 1000px) {
+    background-position: -250px 5px;
+    background-size: auto 620px;
+  }
 }
 
 .section-contact {
