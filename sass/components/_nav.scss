@@ -1,13 +1,33 @@
 .nav {
     margin-left: auto;
+    z-index: 50;
+    transition: 0.5s;
 
     @media screen and (max-width: 768px) {
-        display: none;
+        position: fixed;
+        background-color: black;
+        right: -80vw;
+        top: 0px;
+        width: 80vw;
+        height: 100vh;
+
+        &.open {
+            right: 0;
+        }
     }
 }
 
 .nav-list {
     @include flex(flex-end, center);
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+    }
+    @media screen and (max-width: 768px) {
+        align-items: flex-start;
+        margin-left: 21%;
+        margin-top: 134px;
+        gap: 16px;
+    }
 }
 
 .nav-link {
@@ -18,6 +38,9 @@
 
     &:hover {
         color: $gold;
+    }
+    @media screen and (max-width: 768px) {
+        font-size: 35px;
     }
 }
 

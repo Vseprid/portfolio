@@ -398,10 +398,20 @@ body {
 
 .nav {
   margin-left: auto;
+  z-index: 50;
+  transition: 0.5s;
 }
 @media screen and (max-width: 768px) {
   .nav {
-    display: none;
+    position: fixed;
+    background-color: black;
+    right: -80vw;
+    top: 0px;
+    width: 80vw;
+    height: 100vh;
+  }
+  .nav.open {
+    right: 0;
   }
 }
 
@@ -409,6 +419,19 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .nav-list {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nav-list {
+    align-items: flex-start;
+    margin-left: 21%;
+    margin-top: 134px;
+    gap: 16px;
+  }
 }
 
 .nav-link {
@@ -419,6 +442,11 @@ body {
 }
 .nav-link:hover {
   color: #bdae82;
+}
+@media screen and (max-width: 768px) {
+  .nav-link {
+    font-size: 35px;
+  }
 }
 
 .icon {
@@ -821,11 +849,52 @@ html {
   margin: 5px 4px 0 20px;
   flex-direction: column;
   height: 28px;
+  z-index: 100;
+}
+.hamburger:hover {
+  cursor: pointer;
+}
+.hamburger.open {
+  position: fixed;
+  right: 7%;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition-delay: 0.6s;
+  -o-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 .hamburger__line {
   width: 50px;
   height: 3px;
   background-color: #ffffff;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.open .hamburger__line:nth-child(2) {
+  width: 0px;
+}
+.open .hamburger__line:nth-child(1), .open .hamburger__line:nth-child(3) {
+  -webkit-transition-delay: 0.3s;
+  -o-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+.open .hamburger__line:nth-child(1) {
+  -webkit-transform: translateY(13px);
+  -ms-transform: translateY(13px);
+  -o-transform: translateY(13px);
+  transform: translateY(13px);
+}
+.open .hamburger__line:nth-child(3) {
+  -webkit-transform: translateY(-13px) rotate(90deg);
+  -ms-transform: translateY(-13px) rotate(90deg);
+  -o-transform: translateY(-13px) rotate(90deg);
+  transform: translateY(-13px) rotate(90deg);
 }
 @media screen and (max-width: 768px) {
   .hamburger {
