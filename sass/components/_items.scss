@@ -15,7 +15,14 @@
 
 .skills-items {
     margin-left: 35px;
-    gap: 70px;
+    gap: 10px;
+    @media screen and (max-width: 1225px) {
+        max-width: 800px;
+        margin: {
+            left: auto;
+            right: auto;
+        }
+    }
     @media screen and (max-width: 785px) {
         margin-left: 0;
     }
@@ -64,6 +71,14 @@
 
     & > * {
         max-width: 450px;
+    }
+
+    @media screen and (max-width: 1430px) {
+        max-width: 920px;
+        margin: {
+            left: auto;
+            right: auto;
+        };
     }
 
     @media screen and (max-width: 1000px) {

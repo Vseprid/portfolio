@@ -558,7 +558,14 @@ body {
 
 .skills-items {
   margin-left: 35px;
-  gap: 70px;
+  gap: 10px;
+}
+@media screen and (max-width: 1225px) {
+  .skills-items {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 @media screen and (max-width: 785px) {
   .skills-items {
@@ -601,6 +608,13 @@ body {
 }
 .portfolio-img > * {
   max-width: 450px;
+}
+@media screen and (max-width: 1430px) {
+  .portfolio-img {
+    max-width: 920px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 @media screen and (max-width: 1000px) {
   .portfolio-img {
@@ -723,6 +737,11 @@ html {
   flex-wrap: wrap;
   gap: 5px;
 }
+@media screen and (max-width: 1000px) {
+  .portfolio-buttons {
+    max-width: 450px;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .video-section {
@@ -776,6 +795,11 @@ html {
   margin-left: auto;
   padding-top: 80px;
   padding-bottom: 195px;
+}
+@media screen and (max-width: 1000px) {
+  .contact {
+    padding-bottom: 110px;
+  }
 }
 @media screen and (max-width: 768px) {
   .contact {

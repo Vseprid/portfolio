@@ -3,6 +3,7 @@ $gold: #bdae82;
 $transition: .4s;
 $title-font: 'Merriweather', serif;
 $border: 2px solid $gold;
+
 @mixin svg ($width: auto, $height: auto) {
     width: $width;
     height: $height;
@@ -50,4 +51,11 @@ $border: 2px solid $gold;
 
 %title-table {
     font-size: 32px;
+}
+
+%auto-margin {
+    margin: {
+        left: auto;
+        right: auto;
+    };
 }
