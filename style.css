@@ -572,6 +572,12 @@ body {
     margin-left: 0;
   }
 }
+@media screen and (max-width: 690px) {
+  .skills-items {
+    justify-content: center;
+    gap: 30px;
+  }
+}
 
 .skill-item {
   max-width: 280px;
@@ -627,6 +633,12 @@ body {
   max-width: 450px;
   padding: 43px 115px;
   border: 2px solid #bdae82;
+}
+@media screen and (max-width: 575px) {
+  .price__item {
+    padding: 35px 60px;
+    width: 100%;
+  }
 }
 
 .price__title {
@@ -717,6 +729,11 @@ html {
 @media screen and (max-width: 768px) {
   .hero__inf {
     margin-bottom: 60px;
+  }
+}
+@media screen and (max-width: 535px) {
+  .hero__inf {
+    min-width: 300px;
   }
 }
 

@@ -66,6 +66,9 @@ html {
   @media screen and (max-width: 768px) {
     margin-bottom: 60px;
   }
+  @media screen and (max-width: 535px) {
+    min-width: 300px;
+  }
 }
 
 .button__hero {
