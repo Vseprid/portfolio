@@ -6,9 +6,10 @@
     @media screen and (max-width: 768px) {
         position: fixed;
         background-color: black;
-        right: -80vw;
+        right: -200%;
         top: 0px;
-        width: 80vw;
+        max-width: 620px;
+        width: 100%;
         height: 100vh;
 
         &.open {
