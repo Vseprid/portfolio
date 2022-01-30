@@ -5,4 +5,8 @@ body {
     font-size: 20px;
     line-height: 39px;
     color: $white;
+
+    @media screen and (max-width: 480px) {
+        font-size: 15px;
+      }
 }

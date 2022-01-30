@@ -17,6 +17,11 @@ html {
     margin-left: 60px;
     margin-right: 60px;
   }
+
+  @media screen and (max-width: 480px) {
+    margin-left: 10px;
+    margin-right: 10px;
+}
 }
 // Hero start
 .wrapper_hero {
@@ -44,6 +49,10 @@ html {
       margin-left: 0;
       max-width: 60%;
     }
+
+    @media screen and (max-width: 480px) {
+      margin-left: 20px;
+    }
   }
 }
 
@@ -67,7 +76,7 @@ html {
     margin-bottom: 60px;
   }
   @media screen and (max-width: 535px) {
-    min-width: 300px;
+    min-width: 250px;
   }
 }
 
@@ -161,6 +170,10 @@ html {
     };
     @include flex($align-items: center);
     flex-direction: column;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 90%;
   }
 
   &__title {

@@ -395,6 +395,11 @@ body {
   line-height: 39px;
   color: #ffffff;
 }
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 15px;
+  }
+}
 
 .nav {
   margin-left: auto;
@@ -615,6 +620,11 @@ body {
 .portfolio-img > * {
   max-width: 450px;
 }
+@media screen and (max-width: 480px) {
+  .portfolio-img > * {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 1430px) {
   .portfolio-img {
     max-width: 920px;
@@ -678,6 +688,12 @@ html {
     margin-right: 60px;
   }
 }
+@media screen and (max-width: 480px) {
+  .section {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
 
 .wrapper_hero {
   background-image: url("./assets/img/hero-bg.jpg");
@@ -709,6 +725,11 @@ html {
     max-width: 60%;
   }
 }
+@media screen and (max-width: 480px) {
+  .section__hero > * {
+    margin-left: 20px;
+  }
+}
 
 .page-title {
   font-family: "Merriweather", serif;
@@ -733,7 +754,7 @@ html {
 }
 @media screen and (max-width: 535px) {
   .hero__inf {
-    min-width: 300px;
+    min-width: 250px;
   }
 }
 
@@ -826,6 +847,11 @@ html {
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+  }
+}
+@media screen and (max-width: 480px) {
+  .contact {
+    width: 90%;
   }
 }
 .contact__title {

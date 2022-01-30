@@ -75,6 +75,10 @@
 
     & > * {
         max-width: 450px;
+
+        @media screen and (max-width: 480px) {
+            width: 100%;
+        }
     }
 
     @media screen and (max-width: 1430px) {
@@ -88,6 +92,7 @@
     @media screen and (max-width: 1000px) {
         justify-content: center;
     }
+
 }
 
 .price__item {
