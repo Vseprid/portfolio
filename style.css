@@ -668,6 +668,14 @@ body {
   font-size: 24px;
 }
 
+.price__inf {
+  display: flex;
+  flex-direction: column;
+}
+.price__inf > * {
+  white-space: nowrap;
+}
+
 html {
   scroll-behavior: smooth;
   background: black;
@@ -736,6 +744,7 @@ html {
   font-family: "Merriweather", serif;
   font-size: 60px;
   margin-bottom: 50px;
+  white-space: nowrap;
 }
 @media screen and (max-width: 768px) {
   .page-title {
@@ -922,6 +931,9 @@ html {
 }
 .switch-language__gold {
   color: #bdae82;
+}
+.switch-language span {
+  cursor: pointer;
 }
 @media screen and (max-width: 768px) {
   .switch-language {

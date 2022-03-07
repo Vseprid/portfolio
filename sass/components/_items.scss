@@ -121,3 +121,12 @@
     color: $gold;
     font-size: 24px;
 }
+
+.price__inf {
+    display: flex;
+    flex-direction: column;
+
+    & > * {
+        white-space: nowrap;
+    }
+}
