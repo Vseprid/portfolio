@@ -9,7 +9,7 @@ function getTranslate(lang) {
         const text = i18Obj[lang][elem.dataset.i18n];
         // console.log(text)
         if (!text) return false;
-        elem.textContent = text;
+        elem.innerHTML = text;
         if (elem.placeholder) {
             elem.placeholder = text;
             elem.textContent = '';
