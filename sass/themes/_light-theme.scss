@@ -2,4 +2,28 @@
     &.theme {
         background-image: url(../../assets/svg/carbon_moon.svg);
     }
+
+    &.icon {
+        fill: $black;
+
+        &:hover {
+            fill: $gold;
+        }
+    }
+
+    &.switch-language span {
+        color: $black;
+    }
+
+    &.switch-language_active {
+        color: $white;
+    }
+}
+
+body.theme_light {
+    color: $black;
+}
+
+a.theme_light {
+    color: $black;
 }

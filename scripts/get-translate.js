@@ -22,5 +22,5 @@ export function switchInHeader(event) {
         getTranslate(event.target.textContent);
     } else return false;
   const switches = document.querySelectorAll('.switch-language span')
-  changeClassActive(switches, 'switch-language_gold');
+  changeClassActive(switches, 'switch-language_active');
 }

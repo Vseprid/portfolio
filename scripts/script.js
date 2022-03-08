@@ -14,6 +14,12 @@ switchLang.addEventListener('click', switchInHeader);
 
 const theme = document.querySelector('.theme');
 
+const elemsTheme = ['body' ,'.icon', '.theme', 'a', '.switch-language span'];
+
 theme.addEventListener('click', () => {
-    theme.classList.toggle('theme_light')
+    elemsTheme.forEach(cl => {
+        const elems = document.querySelectorAll(`${cl}`);
+        console.log(elems)
+        elems.forEach(el => el.classList.toggle('theme_light'));
+    })
 })

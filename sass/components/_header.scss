@@ -8,7 +8,8 @@
 
 .switch-language {
     margin-left: 15px;
-    &_gold {
+    font-weight: 700;
+    &_active {
         color: $gold;
     }
 
