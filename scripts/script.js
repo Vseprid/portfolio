@@ -17,9 +17,11 @@ const theme = document.querySelector('.theme');
 const elemsTheme = ['body' ,'.icon', '.theme', 'a', '.nav','.switch-language span', '.wrapper_hero'];
 
 theme.addEventListener('click', () => {
+    const use = theme.querySelector('use');
+    let hrefSvg = use.href.baseVal
+    hrefSvg.endsWith('#theme-light') ? use.href.baseVal = hrefSvg.replace(/-light/, '-dark') : use.href.baseVal = hrefSvg.replace(/-dark/, '-light');
     elemsTheme.forEach(cl => {
         const elems = document.querySelectorAll(`${cl}`);
-        console.log(elems)
         elems.forEach(el => el.classList.toggle('theme_light'));
     })
 })

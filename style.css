@@ -944,11 +944,6 @@ html {
 
 .theme {
   margin-left: 35px;
-  width: 45px;
-  height: 45px;
-  background-image: url(../../assets/svg/carbon_sun.svg);
-  background-repeat: no-repeat;
-  background-position: center;
   cursor: pointer;
 }
 
@@ -1012,9 +1007,6 @@ html {
   }
 }
 
-.theme_light.theme {
-  background-image: url(../../assets/svg/carbon_moon.svg);
-}
 .theme_light.icon {
   fill: #1C1C1C;
 }
