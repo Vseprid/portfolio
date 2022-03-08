@@ -406,7 +406,7 @@ body {
   z-index: 50;
   transition: 0.5s;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 805px) {
   .nav {
     position: fixed;
     background-color: black;
@@ -929,16 +929,26 @@ html {
 .switch-language {
   margin-left: 15px;
 }
-.switch-language__gold {
+.switch-language_gold {
   color: #bdae82;
 }
 .switch-language span {
   cursor: pointer;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 805px) {
   .switch-language {
     margin-left: auto;
   }
+}
+
+.theme {
+  margin-left: 35px;
+  width: 45px;
+  height: 45px;
+  background-image: url(../../assets/svg/carbon_sun.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
 }
 
 .hamburger {
@@ -993,12 +1003,16 @@ html {
   -o-transform: translateY(-13px) rotate(90deg);
   transform: translateY(-13px) rotate(90deg);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 805px) {
   .hamburger {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
   }
+}
+
+.theme_light.theme {
+  background-image: url(../../assets/svg/carbon_moon.svg);
 }
 
 /*# sourceMappingURL=style.css.map */
