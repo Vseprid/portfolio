@@ -1,4 +1,5 @@
 .theme_light {
+    // Header
     &.theme {
         background-image: url(../../assets/svg/carbon_moon.svg);
     }
@@ -11,12 +12,24 @@
         }
     }
 
+    @media screen and (max-width: 805px) {
+        &.nav {
+            background-color: $white;
+        }
+    }
+
     &.switch-language span {
         color: $black;
     }
 
     &.switch-language_active {
         color: $white;
+    }
+
+    // Hero
+
+    &.wrapper_hero {
+        background-image: url(../../assets/img/hero-bg-light.jpg)
     }
 }
 

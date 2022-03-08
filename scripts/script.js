@@ -14,7 +14,7 @@ switchLang.addEventListener('click', switchInHeader);
 
 const theme = document.querySelector('.theme');
 
-const elemsTheme = ['body' ,'.icon', '.theme', 'a', '.switch-language span'];
+const elemsTheme = ['body' ,'.icon', '.theme', 'a', '.nav','.switch-language span', '.wrapper_hero'];
 
 theme.addEventListener('click', () => {
     elemsTheme.forEach(cl => {

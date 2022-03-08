@@ -1021,11 +1021,19 @@ html {
 .theme_light.icon:hover {
   fill: #bdae82;
 }
+@media screen and (max-width: 805px) {
+  .theme_light.nav {
+    background-color: #ffffff;
+  }
+}
 .theme_light.switch-language span {
   color: #1C1C1C;
 }
 .theme_light.switch-language_active {
   color: #ffffff;
+}
+.theme_light.wrapper_hero {
+  background-image: url(../../assets/img/hero-bg-light.jpg);
 }
 
 body.theme_light {
