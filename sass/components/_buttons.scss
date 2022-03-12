@@ -5,18 +5,22 @@
     font-family: inherit;
     transition: $transition;
 
-    &_active {
-        background-color: $gold;
-    }
-
-    &_inactive {
+    &_dark {
         background-color: transparent;
         border: 2px solid $gold;
         color: $gold;
     }
 
+    &_light, &_active {
+        background-color: $gold;
+    }
+
+    &_active {
+        color: $black;
+    }
+
     &:hover {
         color: $white;
-        font-size: 20px;
+        // font-size: 20px;
     }
 }

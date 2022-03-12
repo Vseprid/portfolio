@@ -60,3 +60,9 @@ $border: 2px solid $gold;
         right: auto;
     };
 }
+
+%button-dark {
+    background-color: transparent;
+    border: 2px solid $gold;
+    color: $gold;
+}

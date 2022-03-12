@@ -1,42 +1,61 @@
 .theme_light {
-    // Header
-    // &.theme {
-    //     background-image: url(../../assets/svg/carbon_moon.svg);
-    // }
+  &.button_light.button_white {
+    background-color: $white;
 
-    &.icon {
-        fill: $black;
-
-        &:hover {
-            fill: $gold;
-        }
+    &:hover {
+      background-color: $black;
+      color: $gold;
     }
+  }
 
-    @media screen and (max-width: 805px) {
-        &.nav {
-            background-color: $white;
-        }
-    }
+  &.button_dark {
+    color: $black;
+    background-color: $gold;
 
-    &.switch-language span {
-        color: $black;
-    }
-
-    &.switch-language_active {
+    &:hover {
         color: $white;
     }
 
-    // Hero
+  &.button_active {
+    @extend %button-dark;
+  }
+  }
 
-    &.wrapper_hero {
-        background-image: url(../../assets/img/hero-bg-light.jpg)
+  // Header
+
+  &.icon {
+    fill: $black;
+
+    &:hover {
+      fill: $gold;
     }
+  }
+
+  @media screen and (max-width: 805px) {
+    &.nav {
+      background-color: $white;
+    }
+  }
+
+  &.switch-language span {
+    color: $black;
+  }
+
+  &.switch-language_active {
+    color: $white;
+  }
+
+  // Hero
+
+  &.wrapper_hero {
+    background-image: url(../../assets/img/hero-bg-light.jpg);
+  }
 }
 
 body.theme_light {
-    color: $black;
+  color: $black;
 }
 
 a.theme_light {
-    color: $black;
+  color: $black;
 }
