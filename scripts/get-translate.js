@@ -7,7 +7,6 @@ function getTranslate(lang) {
     const elems = document.querySelectorAll('[data-i18n]');
     elems.forEach(elem => {
         const text = i18Obj[lang][elem.dataset.i18n];
-        // console.log(text)
         if (!text) return false;
         elem.innerHTML = text;
         if (elem.placeholder) {
