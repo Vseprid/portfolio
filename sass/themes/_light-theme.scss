@@ -1,4 +1,6 @@
 .theme_light {
+  // Buttons
+
   &.button_light.button_white {
     background-color: $white;
 
@@ -19,6 +21,24 @@
   &.button_active {
     @extend %button-dark;
   }
+  }
+
+  // Titles
+
+  &.section-title {
+    color: $black;
+    background-color: $white;
+
+    // &::after {
+    //   content: "";
+    //   position: absolute;
+    //   left: 0;
+    //   bottom: 10%;
+    //   width: 100%;
+    //   height: 2px;
+    //   background-color: $black;
+    //   z-index: 1;
+    // }
   }
 
   // Header
@@ -50,10 +70,38 @@
   &.wrapper_hero {
     background-image: url(../../assets/img/hero-bg-light.jpg);
   }
+
+  // Contact
+  &.wrapper_contact {
+    background-image: url(../../assets/img/contacts-bg-light.jpg)
+  }
+
+  &.contact__title {
+    background-color: transparent;
+  }
+
+  &.contact__input {
+    background-color: rgba(255, 255, 255, 0.5);
+
+    &::placeholder {
+      color: $black;
+    }
+  }
+
+  // Footer
+
+  &.socnet {
+    fill: $black;
+
+    &:hover {
+      fill: $gold;
+    }
+  }
 }
 
 body.theme_light {
   color: $black;
+  background-color: $white;
 }
 
 a.theme_light {

@@ -18,7 +18,7 @@
 }
 
 .theme_light.button_dark.button_active {
-  background-color: transparent;
+  background-color: #1C1C1C;
   border: 2px solid #bdae82;
   color: #bdae82;
 }
@@ -686,6 +686,9 @@ body {
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
   background: black;
 }
 
@@ -1029,6 +1032,10 @@ html {
 .theme_light.button_dark:hover {
   color: #ffffff;
 }
+.theme_light.section-title {
+  color: #1C1C1C;
+  background-color: #ffffff;
+}
 .theme_light.icon {
   fill: #1C1C1C;
 }
@@ -1049,9 +1056,28 @@ html {
 .theme_light.wrapper_hero {
   background-image: url(../../assets/img/hero-bg-light.jpg);
 }
+.theme_light.wrapper_contact {
+  background-image: url(../../assets/img/contacts-bg-light.jpg);
+}
+.theme_light.contact__title {
+  background-color: transparent;
+}
+.theme_light.contact__input {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.theme_light.contact__input::placeholder {
+  color: #1C1C1C;
+}
+.theme_light.socnet {
+  fill: #1C1C1C;
+}
+.theme_light.socnet:hover {
+  fill: #bdae82;
+}
 
 body.theme_light {
   color: #1C1C1C;
+  background-color: #ffffff;
 }
 
 a.theme_light {

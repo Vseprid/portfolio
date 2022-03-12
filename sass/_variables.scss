@@ -62,7 +62,7 @@ $border: 2px solid $gold;
 }
 
 %button-dark {
-    background-color: transparent;
+    background-color: $black;
     border: 2px solid $gold;
     color: $gold;
 }
