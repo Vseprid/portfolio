@@ -1032,6 +1032,9 @@ body {
 .theme_light.button_dark:hover {
   color: #ffffff;
 }
+.theme_light.wrapper-title::before {
+  background-color: #1C1C1C;
+}
 .theme_light.section-title {
   color: #1C1C1C;
   background-color: #ffffff;
