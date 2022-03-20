@@ -4,6 +4,7 @@ import preloadImages from './preload-images.js';
 import {switchLang, switchInHeader} from './get-translate.js';
 import {themeElem, changeTheme, theme} from './light-theme.js';
 import {setLocalStorage, getLocalStorage} from './local-storage.js';
+import {buttons, rippleButton} from './ripple-button.js';
 
 hamburgerWindow.hamburger.addEventListener('click', hamburgerWindow.toggleMenu);
 hamburgerWindow.nav.addEventListener('click', hamburgerWindow.closeMenu);
@@ -23,3 +24,7 @@ themeElem.addEventListener('click', () => {
 window.addEventListener('beforeunload', setLocalStorage)
 
 window.addEventListener('load', getLocalStorage)
+
+
+
+buttons.forEach(element => element.addEventListener('click', rippleButton));
