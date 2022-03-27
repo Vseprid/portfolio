@@ -114,22 +114,6 @@ body {
     margin-right: 0;
   }
 }
-
-
-.video-player {
-  position: relative;
-  @include flex(center, center);
-
-  &__img {
-    width: 100%;
-  }
-
-  &__hover {
-    position: absolute;
-    width: 8.5%;
-  }
-}
-
 // Video end
 
 // Price start
