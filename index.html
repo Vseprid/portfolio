@@ -118,22 +118,20 @@
                     <h2 class="section-title" data-i18n="video">Video</h2>
                 </div>
                 <div class="player">
-                    <video class="player__video" src="assets/video/video.mp4" poster="assets/img/video.jpg"></video>
+                    <video class="player__video viewer" src="assets/video/video.mp4"></video>
+                    <div class="player__poster"></div>
                     <div class="player__controls">
-                        <button class="player__button">
+                        <button class="player__button toggle">
                             ►
                         </button>
-                        <input type="range" name="progress" class="player__slider player__slider_progress">
-                        <!-- <div class="progress">
-                            <div class="progress__filled"></div>
-                        </div> -->
-                        <button class="player__button player__button-volume">
+                        <input type="range" name="currentTime" class="player__slider player__slider_progress progress" min="0" max="58" step="0.01" value="0">
+                        <button class="player__button player__button-volume button-volume">
                         </button>
-                        <input type="range" name="volume" class="player__slider player__slider_volume" min="0" max="1" step="0.05" value="1">
+                        <input type="range" name="volume" class="player__slider player__slider_volume volume" min="0" max="1" step="0.05" value="1">
                     </div>
-                    <!-- <svg class="video-player__hover play">
+                    <svg class="player__hover play">
                         <use href="assets/svg/sprite.svg#play"></use>
-                    </svg> -->
+                    </svg>
                 </div>
             </section>
             <!-- Video end -->
